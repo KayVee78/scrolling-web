@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Seymour+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#341f97, #004497);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+header .logo{
+    color: #f5f6fa;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #f5f6fa;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+    background: #f5f6fa;
+    color: #341f97;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1e246a, transparent);
+    z-index: 1000;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon{
+    mix-blend-mode: screen;
+    z-index: 10;
+}
+
+section img#rocks{
+    z-index: 12;
+}
+
+section img#clouds{
+    z-index: 11;
+}
+
+
+#text{
+    position: absolute;
+    right: -350px;
+    top: 230px;
+    color: #f5f6fa;
+    white-space: nowrap;
+    font-size: 4.2vw;
+    z-index: 9;
+}
+
+#btn{
+    text-decoration: none;
+    position: absolute;
+    right: 600px;
+    top: 375px;
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 40px;
+    background: #f5f6fa;
+    color: #341f97;
+    font-size: 1.3em;
+    z-index: 9;
+    
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #1e246a;
+}
+
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #f5f6fa;
+}
+
+.sec p{
+    font-size: 1.2em;
+    color: #f5f6fa;
+}
+
+
